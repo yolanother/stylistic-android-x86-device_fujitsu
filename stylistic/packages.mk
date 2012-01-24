@@ -1,0 +1,65 @@
+#
+# Copyright (C) 2011 The Android-x86 Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+# Common packages for Android-x86 platform.
+
+PRODUCT_PACKAGES := \
+    BasicSmsReceiver \
+    Galaxy4 \
+    GlobalTime \
+    HoloSpiralWallpaper \
+    JETBoy \
+    LiveWallpapers \
+    LiveWallpapersPicker \
+    LunarLander \
+    MagicSmokeWallpapers \
+    NoiseField \
+    NotePad \
+    PhaseBeam \
+    Provision \
+    RSSReader \
+    Snake \
+    SpeechRecorder \
+    SoundRecorder \
+    Stk \
+    Superuser \
+    VideoEditor \
+    VisualizationWallpapers \
+    VoiceDialer \
+    chat \
+    com.android.future.usb.accessory \
+    drmserver \
+    gps.default \
+    hwcomposer.default \
+    icu.dat \
+    libdrmframework_jni \
+    make_ext4fs \
+    powerbtnd \
+    v86d \
+
+PRODUCT_PACKAGES += \
+    badblocks \
+    e2fsck \
+    mke2fs \
+    resize2fs \
+    tune2fs \
+    wacom-input \
+    tslib
+
+THIRD_PARTY_APPS = \
+    AndroidTerm \
+    FileManager \
+    LIME \

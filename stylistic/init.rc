@@ -293,6 +293,7 @@ on boot
     setprop rild.libpath /system/lib/libreference-ril.so
     setprop rild.libargs "-d /dev/ttyUSB1"
 
+
 # Set this property so surfaceflinger is not started by system_init
     setprop system_init.startsurfaceflinger 0
 
@@ -541,6 +542,10 @@ service userinit /system/bin/sh /system/etc/init.sh
 service logcat /system/bin/logcat -v time -f /data/log.txt
     disabled
     oneshot
+
+service userinit /system/bin/sh /system/etc/init.sh
+    oneshot
+    disabled
 
 on property:dev.bootcomplete=1
     start userinit
