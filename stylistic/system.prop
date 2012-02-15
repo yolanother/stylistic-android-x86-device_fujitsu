@@ -1,4 +1,14 @@
 # system.prop for fujitsu-stylistic
+debug.drm.mode=1024x768
+
+ro.product.board=fujitsu_stylistic
+ro.sf.install_non_market_
 ro.sf.lcd_density=160
+
 service.adb.tcp.port=5555
+
+backlight.brightness_file=/sys/class/backlight/acpi_video0/brightness
+backlight.max_brightness_file=/sys/class/backlight/acpi_video0/max_brightness
+
+keyguard.no_require_sim=1
 # end system.prop for fujitsu-stylistic

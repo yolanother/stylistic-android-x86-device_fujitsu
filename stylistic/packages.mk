@@ -49,6 +49,11 @@ PRODUCT_PACKAGES := \
     make_ext4fs \
     powerbtnd \
     v86d \
+    AndroidTerm \
+    Flatnote \
+    sensors.$(TARGET_PRODUCT) \
+    lights.$(TARGET_PRODUCT) \
+    devinfo
 
 PRODUCT_PACKAGES += \
     badblocks \
@@ -59,7 +64,9 @@ PRODUCT_PACKAGES += \
     wacom-input \
     tslib
 
-THIRD_PARTY_APPS = \
-    AndroidTerm \
+THIRD_PARTY_APPS += \
     FileManager \
     LIME \
+
+PRODUCT_PACKAGES += \
+    $(THIRD_PARTY_APPS)
