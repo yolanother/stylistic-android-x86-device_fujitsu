@@ -5,12 +5,14 @@ TARGET_ARCH_VARIANT := x86
 
 # Stylus
 BOARD_USES_WACOMINPUT := true
+BOARD_USES_TSLIB := false
+
+# Audio
+BOARD_USES_ALSA_AUDIO := true
+BUILD_WITH_ALSA_UTILS := true
 
 # Video
 BOARD_GPU_DRIVERS := i915g
-BOARD_USES_DRM := true
-
-BOARD_KERNEL_CMDLINE += video=LVDS-1:d video=1024x768 i915.modeset=1
 
 # Apps
 TARGET_HAS_THIRD_PARTY_APPS := true

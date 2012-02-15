@@ -1,0 +1,28 @@
+on boot
+    chown system system /sys/class/backlight/acpi_video0/brightness
+    
+    setkeycode 0x6d 115
+    setkeycode 0x6e 114
+    setkeycode 0x69 28
+    setkeycode 0x6b 1
+    setkeycode 0x68 127
+    setkeycode 0x6c 125
+    setkeycode 0x67 116
+
+service wacom-input /system/xbin/wacom-input
+    disabled
+
+service amixer-master /system/bin/alsa_amixer set Master 100 on
+    oneshot
+    disabled
+
+service amixer-pcm /system/bin/alsa_amixer set PCM 100 on
+    oneshot
+    disabled
+
+on property:dev.bootcomplete=1
+    start wacom-input
+    start amixer-master
+    start amixer-pcm
+
+

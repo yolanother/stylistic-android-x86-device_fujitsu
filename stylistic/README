@@ -1,13 +1,15 @@
-This is a target to support some ASUS laptops.
+This is a target to support some Fujitsu Stylistic ST devices.
 
 Tested OK on:
 
-* N82JV
-* K42JV
-* K52F
-* K52JT
-* K53E
-* U45JC
-* F82A
-* A8L
-* EP121
+* 5022D
+
+Special Build Instructions
+
+Custom Toolchain:
+cd $(top)/prebuilt
+git checkout prebuilt/linux-x86/toolchain/i686-android-linux-4.4.3/build-toolchain.sh
+patch -p1 < $(top)/device/fujitsu/stylistic/patches/patch-prebuilt.patch
+patch -p1 < $(top)/device/fujitsu/stylistic/patches/patch-ndk.patch
+
+

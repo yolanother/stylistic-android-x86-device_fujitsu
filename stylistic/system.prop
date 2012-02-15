@@ -1,8 +1,6 @@
 # system.prop for fujitsu-stylistic
-debug.drm.mode=1024x768
-
 ro.product.board=fujitsu_stylistic
-ro.sf.install_non_market_
+ro.sf.install_non_market_apps=1
 ro.sf.lcd_density=160
 
 service.adb.tcp.port=5555

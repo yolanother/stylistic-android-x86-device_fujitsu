@@ -11,7 +11,6 @@ PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 #USE_SQUASHFS := 0
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init.sh:system/etc/init.sh \
     frameworks/base/data/fonts/Roboto-BoldCondensedItalic.ttf:system/fonts/Roboto-BoldCondensedItalic.ttf \
     frameworks/base/data/fonts/Roboto-BoldCondensed.ttf:system/fonts/Roboto-BoldCondensed.ttf \
     frameworks/base/data/fonts/Roboto-BoldItalic.ttf:system/fonts/Roboto-BoldItalic.ttf \
